@@ -21,7 +21,17 @@
 
 ## ⚙️Installation & Run
 
+
 ## Step 1:
+
+### git clone
+
+```bash
+  git clone https://github.com/Zero0Zed/instabio
+```
+    
+
+## Step 2:
 
 ### Install libraries
 
@@ -29,7 +39,7 @@
   pip  install -r requirements.txt
 ``` 
 
-## Step 2:
+## Step 3:
 ### Run Script
 
     Python3 or Python instabio.py
