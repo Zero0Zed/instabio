@@ -30,7 +30,7 @@
 ``` 
 
 ## Step 2:
-### Run Scripts
+### Run Script
 
     Python3 or Python instabio.py
 ## 💡Support
@@ -41,6 +41,4 @@ For support, email ziezero310@gmail.com.com or join our @Zero00Zed Telegram chan
 ## 🖥️Programmer
 
 - [@Zero0Zed](https://www.github.com/Zero0zed)
-
-
 
