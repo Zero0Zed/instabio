@@ -10,21 +10,25 @@ import webbrowser
 
 # ------------------------------------------------
 
-# ------------------- Setting ------------------- 
-loader_connect = instaloader.Instaloader()
+# ------------------- Setting -------------------
+try:
 
-print(Fore.RED + "Step1: Please connect to your instagram account with user and password ")
-print(Fore.CYAN + "-----------------------------------------------------------------")
-user_instagram = input("Please enter of your instagram user account:")
-print(Fore.CYAN + "-----------------------------------------------------------------")
-pass_instagram = input("Please enter of your instagram password account:")
-print(Fore.CYAN + "-----------------------------------------------------------------")
-print(Fore.MAGENTA + "Please wait to connecting of your instagram account ...")
+    loader_connect = instaloader.Instaloader()
+    print(Fore.RED + "Step1: Please connect to your instagram account with user and password ")
+    print(Fore.CYAN + "-----------------------------------------------------------------")
+    user_instagram = input("Please enter of your instagram user account:")
+    print(Fore.CYAN + "-----------------------------------------------------------------")
+    pass_instagram = input("Please enter of your instagram password account:")
+    print(Fore.CYAN + "-----------------------------------------------------------------")
+    print(Fore.MAGENTA + "Please wait to connecting of your instagram account ...")
+    loader_connect.login(user_instagram, pass_instagram)
 
-loader_connect.login(user_instagram, pass_instagram)
-
-os.system('cls' if os.name == 'nt' else 'clear')
-
+    os.system('cls' if os.name == 'nt' else 'clear')
+except:
+    print(Fore.LIGHTWHITE_EX + "-----------------------------------------------------------------")
+    print(Fore.RESET + "Please Check the internet,username,password and try again.")
+    print(Fore.LIGHTWHITE_EX + "-----------------------------------------------------------------")
+    exit()
 # ------------------- main page -------------------
 menu_main = "1"
 while menu_main == "1":
@@ -69,6 +73,7 @@ while menu_main == "1":
     if menu == "1":
         id = input("please enter instagram account id with out @ :")
         print(Fore.GREEN + "-----------------------------------------------------------------")
+        # noinspection PyUnboundLocalVariable
         profile = instaloader.Profile.from_username(loader_connect.context, f"{id}")
         bio = profile.biography
         print(f"account biography of {id} is -----> {bio}")
