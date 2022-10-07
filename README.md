@@ -35,7 +35,7 @@
     Python3 or Python instabio.py
 ## 💡Support
 
-For support, email ziezero310@gmail.com.com or join our @Zero00Zed Telegram channel.
+For support, email ziezero310@gmail.com or join our @Zero00Zed Telegram channel.
 
 
 ## 🖥️Programmer
